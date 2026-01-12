@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import Sidebar from './components/Sidebar';
 import Dashboard from './components/Dashboard';
 import Catalog from './components/Catalog';
-import AIAssistant from './components/AIAssistant';
 import Profile from './components/Profile';
 import Auth from './components/Auth';
 import { View, Book, Loan, User } from './types';
@@ -84,8 +83,6 @@ const App: React.FC = () => {
             setIsRegisterModalOpen={setIsRegisterModalOpen}
           />
         );
-      case 'ai-assistant':
-        return <AIAssistant books={books} />;
       case 'profile':
         return <Profile user={user} onUpdate={setUser} />;
       case 'loans':
@@ -205,7 +202,7 @@ const App: React.FC = () => {
             {selectedLoanForDetail && (
               <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
                 <div className="absolute inset-0 bg-slate-900/60 backdrop-blur-sm" onClick={() => setSelectedLoanForDetail(null)}></div>
-                <div className="relative bg-white w-full max-w-md rounded-[2.5rem] shadow-2xl overflow-hidden animate-slideUp">
+                <div className="relative bg-white w-full max-md rounded-[2.5rem] shadow-2xl overflow-hidden animate-slideUp">
                   <div className="p-10">
                     <div className="flex justify-between items-start mb-8">
                       <div className="w-20 h-20 rounded-[2rem] bg-indigo-50 border-2 border-indigo-100 flex items-center justify-center text-3xl font-black text-indigo-600">

@@ -37,4 +37,4 @@ export interface Message {
   text: string;
 }
 
-export type View = 'dashboard' | 'catalog' | 'loans' | 'inventory-map' | 'ai-assistant' | 'profile';
+export type View = 'dashboard' | 'catalog' | 'loans' | 'inventory-map' | 'profile';

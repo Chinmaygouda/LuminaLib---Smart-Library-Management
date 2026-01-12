@@ -1,7 +1,5 @@
 {
   "name": "LuminaLib - Smart Library Management",
-  "description": "An advanced AI-powered library management system featuring real-time inventory tracking, reading trend analytics, and a Gemini-powered personal librarian.",
-  "requestFramePermissions": [
-    "camera"
-  ]
+  "description": "An advanced library management system featuring real-time inventory tracking and reading trend analytics.",
+  "requestFramePermissions": []
 }
